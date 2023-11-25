@@ -25,12 +25,13 @@ const Navigation = () => {
             styles.setProperty("--text-color", "white");
             styles.setProperty("--background-color", "rgb(20 20 20)");
             styles.setProperty("--box-shadow", "white");
+            styles.setProperty("--hover-background-color", "rgb(70 70 70)");
         }
         else{
             styles.setProperty("--text-color", "black");
-            styles.setProperty("--background-color", "white");
+            styles.setProperty("--background-color", "whitesmoke");
             styles.setProperty("--box-shadow", "black");
-            
+            styles.setProperty("--hover-background-color", "rgb(200 200 200)");
         }
     }
 

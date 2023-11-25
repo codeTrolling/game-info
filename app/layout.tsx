@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Game info',
-  description: 'Information about games you would not want to miss out on playing.',
+  description: 'Information about games you would not want to miss out on playing. Find the perfect game for you.',
   keywords: 'Gaming, competitive, pvp, multiplayer, coop, casual, rogue-like, souls-like, anime, single player, story rich, rankings',
 }
 
@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
           <Navigation/>
-          {children}
+          <div className='viewport'>
+            {children}
+          </div>
       </body>
     </html>
   )

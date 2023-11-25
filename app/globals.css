@@ -2,8 +2,10 @@
   --background-color: rgb(20 20 20);
   --text-color: white;
   --box-shadow: white;
-  --theme-color: #ffdf00;
-  --theme-hover-color: #ffdf00;
+  --theme-color: #0078da;
+  --theme-hover-color: #0099ff;
+  --hover-background-color: rgb(70 70 70);
+  --scroll-color: rgb(100 100 100);
 }
 
 html,
@@ -24,6 +26,7 @@ img{
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 .page-wrapper{
@@ -37,7 +40,7 @@ a{
   height: 60px;
   border-radius: 50%;
   background-color: var(--theme-color);
-  position: absolute;
+  position: fixed;
   bottom: 8%;
   left: 3%;
   box-shadow: 0px 0px 10px var(--box-shadow);
@@ -63,3 +66,19 @@ a{
   left: 0;
   pointer-events: none;
 } */
+
+.viewport{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
