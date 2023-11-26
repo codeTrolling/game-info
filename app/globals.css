@@ -6,6 +6,7 @@
   --theme-hover-color: #0099ff;
   --hover-background-color: rgb(70 70 70);
   --scroll-color: rgb(100 100 100);
+  --icons-color: 0;
 }
 
 html,
@@ -47,6 +48,9 @@ a{
   cursor: pointer;
   transition: all 0.2s;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-image:hover{
   background-color: var(--text-color);
@@ -54,6 +58,12 @@ a{
 }
 .home-image:not(:last-of-type){
   bottom: 17%;
+}
+
+.navigation-images{
+  filter: invert(var(--icons-color));
+  width: 60%;
+  transition: 0.2s;
 }
 
 /* transition between pages but probably won't be used
