@@ -1,0 +1,55 @@
+/* Handles wrong urls (non-existing articles) */
+.notFoundDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notFoundh3{
+    text-align: center;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(left, var(--theme-color), rgb(111, 0, 255), rgb(255, 0, 212), rgb(111, 0, 255), rgb(0, 140, 255), var(--theme-color), rgb(111, 0, 255), rgb(255, 0, 212), rgb(111, 0, 255), rgb(0, 140, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: textColor 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-size: 230%;
+}
+
+@keyframes textColor {
+    from{
+        background-position: right;
+    }
+    to{
+        background-position: left;
+    }
+}
+/**/
+
+.articleTitle{
+    text-align: center;
+    border-bottom: solid 3px var(--theme-color);
+    font-size: 2.5rem;
+}
+
+.articleImg{
+    width: 70%;
+    margin: 0 auto 50px;
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+}
+
+.description{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.segment{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
