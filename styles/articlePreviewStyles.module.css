@@ -30,7 +30,7 @@
 }
 .description::-webkit-scrollbar{
     width: 4px;
-    height: 100px;
+    height: 2px;
 }
 .description::-webkit-scrollbar-thumb{
     background: var(--scroll-color);
@@ -42,4 +42,11 @@
 
 .views{
     margin: 8px 0 5px 10px;
+}
+
+@media (max-width: 600px){
+    .articleContainer{
+        width: 45%;
+        margin: 0 5px 25px;
+    }
 }
