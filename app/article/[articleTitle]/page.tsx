@@ -93,7 +93,7 @@ const Article = ({params}: any) => {
     if(articleInfo === undefined){
         return(
             <div className={styles.notFoundDiv}>
-                <h3 className={styles.notFoundh3}>Article not found!</h3>
+                <span className={styles.notFoundh3}>Article not found!</span>
             </div>
         )
     }
