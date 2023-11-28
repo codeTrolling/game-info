@@ -1,5 +1,5 @@
 # game-info
-## A web app that is all about giving you information about video games.
+## A web app about video games related information.
 Made with next.js.
 
 ```How to run```:
