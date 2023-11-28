@@ -9,7 +9,7 @@ type articleType = {
 }
 const ArticlePreview = (article: articleType) => {
     return(
-        <Link href={"/article/" + article.title.toLocaleLowerCase()} className={styles.articleContainer}>
+        <Link href={"/article/" + article.title} className={styles.articleContainer}>
             <img src={article.image} alt="" className={styles.articleImage}/>
             <div className="flex-column" style={{padding: "8px"}}>
                 <label className={styles.title}>{article.title}</label>

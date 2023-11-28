@@ -4,6 +4,14 @@ import LOL from "../../../assets/LeagueOfLegends.png"
 import Remnant from "../../../assets/Remnant.png"
 import LiesOfP from "../../../assets/LiesOfP.png"
 import Fortnite from "../../../assets/Fortnite.png"
+import { URLParser } from '@/functions/URLParser'
+import { Metadata } from 'next'
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  return {
+    title: URLParser(params.articleTitle),
+  };
+}
 
 const Article = ({params}: any) => {
     const exampleData = [
@@ -74,17 +82,11 @@ const Article = ({params}: any) => {
       ]
 
       //get parameters and parse them (remove spaces)
-      const parameter = params.articleTitle.split("%20");
-      var parsedParameter: string = "";
-      parameter.forEach((e: string) => {
-        parsedParameter += e + " ";
-      })
-      parsedParameter = parsedParameter.slice(0, -1);
-      //
+      var parsedParameter = URLParser(params.articleTitle);
 
       var articleInfo: any;
       for(let i: number = 0; i < exampleData.length; i++){
-        if(exampleData[i].title.toLocaleLowerCase() === parsedParameter){
+        if(exampleData[i].title.toLocaleLowerCase() === parsedParameter.toLocaleLowerCase()){
             articleInfo = exampleData[i];
             break;
         }

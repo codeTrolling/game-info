@@ -1,4 +1,3 @@
-# Currently in development
 # game-info
 ## A web app that is all about giving you information about video games.
 Made with next.js.
